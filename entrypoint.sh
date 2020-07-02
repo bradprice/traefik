@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 # entrypoint taken from the default traefik image 
 # https://raw.githubusercontent.com/containous/traefik-library-image/6dcd8fe17189e8076ee052a614dda5550afb2930/alpine/entrypoint.sh
 set -e
