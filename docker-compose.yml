@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+
+  mkdocs:
+    image: "${MKDOCS_IMAGE}"
+    build:
+      context: .
+      dockerfile: Dockerfile-centos    
+
+  mkdocs-alpine:
+    image: "${MKDOCS_ALPINE_IMAGE}"
+    build:
+      context: .
+      dockerfile: Dockerfile-alpine
