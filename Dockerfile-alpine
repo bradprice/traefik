@@ -1,6 +1,6 @@
 FROM alpine:3.12
 
-ARG TRAEFIK_VERSION="2.2.1"
+ARG TRAEFIK_VERSION="2.2.11"
 
 COPY entrypoint.sh /entrypoint.sh
 
@@ -16,3 +16,5 @@ EXPOSE 443
 
 ENTRYPOINT [ "sh", "/entrypoint.sh" ]
 CMD [ "traefik" ]
+
+HEALTHCHECK CMD curl --fail http://localhost/ || exit 1
