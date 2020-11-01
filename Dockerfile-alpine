@@ -1,6 +1,6 @@
 FROM alpine:3.12
 
-ARG TRAEFIK_VERSION="2.2.11"
+ARG TRAEFIK_VERSION="2.3.2"
 
 COPY entrypoint.sh /entrypoint.sh
 
