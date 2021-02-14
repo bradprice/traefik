@@ -1,6 +1,6 @@
 FROM centos:7.8.2003
 
-ARG TRAEFIK_VERSION="2.3.2"
+ARG TRAEFIK_VERSION="2.4.2"
 
 COPY entrypoint.sh /entrypoint.sh
 
